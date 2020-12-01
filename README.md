@@ -36,11 +36,11 @@ The tool comes with a GUI interface. User has **to provide the tool with a Parti
 
 **2.** Run a **targeted analysis action** for a specific removable device by providing the **device's S/N** (embedded by the manufacturer and usually written on the device's outer case. See the command Cheatsheet included within the first few lines of the .py file, for obtaining a device's S/N via CMD). With this option the user will get a report (HTML or CSV) providing an actual **timeline** of all the times the device was connected to the OS, along with:
 
-![GitHub Logo](/CaptureSN.PNG)
-
 - the Volume Serial Number of each volume that was present at that point on the device and
 
 - a flag indicating when a VSN change was detected, indicating a possible format action on the device (which appears every time a device connected to the system had a different Volume Serial Number than the previous time).
+
+![GitHub Logo](/CaptureSN.PNG)
 
 In any case, the tool provides a verbose output pane providing extra info for the analysis.
 
