@@ -53,4 +53,4 @@ In any case, the tool provides a verbose output pane providing extra info for th
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/theAtropos4n6/Partition-4DiagnosticParser/blob/main/LICENSE)
