@@ -28,7 +28,7 @@ for the [PySimpleGUI](https://pypi.org/project/PySimpleGUI/) module from  MikeTh
 
 ## Usage
 
-The tool comes with a GUI interface. User has **to provide the tool with a Partition%4Diagnostic.evtx log file** and then has the following options:
+The tool comes with a GUI interface. User has **to provide the tool with a Partition%4Diagnostic.evtx log file** (when in live systems, bear in mind that this Event Log is locked from the OS and needs to be copied elsewere first) and then has the following options:
 
 **1.** Run a **full report action** to get a report (HTML or CSV) showing all of the connected devices, their manufacturer, model, First Connected Timestamp in UTC, Last Connected Timestamp in UTC and finally **every Volume Serial Number that ever existed on these devices** historically throughout the whole log.
 
