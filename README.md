@@ -32,6 +32,8 @@ The tool comes with a GUI interface. User has **to provide the tool with a Parti
 
 **1.** Run a **full report action** to get a report (HTML or CSV) showing all of the connected devices, their manufacturer, model, First Connected Timestamp in UTC, Last Connected Timestamp in UTC and finally **every Volume Serial Number that ever existed on these devices** historically throughout the whole log.
 
+![GitHub Logo](/CaptureFULL.PNG)
+
 **2.** Run a **targeted analysis action** for a specific removable device by providing the **device's S/N** (embedded by the manufacturer and usually written on the device's outer case. See the command Cheatsheet included within the first few lines of the .py file, for obtaining a device's S/N via CMD). With this option the user will get a report (HTML or CSV) providing an actual **timeline** of all the times the device was connected to the OS, along with:
 
 - the Volume Serial Number of each volume that was present at that point on the device and
