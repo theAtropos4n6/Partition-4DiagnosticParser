@@ -1,6 +1,6 @@
 # Partition%4Diagnostic.evtx Log Parser
 
-**Partition%4DiagnosticParser** is a Python tool that parses the Windows 10 **Partition%4Diagnostic.evtx** log file (Path:C:\Windows\System32\winevt\Logs) and reports information about all the connected devices and their Volume Serial Numbers, both currently present on the device and previously existed. It accomplices this task by doing the following:
+**Partition%4DiagnosticParser** is a Python tool that parses the Windows 10 **Microsoft-Windows-Partition%4Diagnostic.evtx** log file (Path:C:\Windows\System32\winevt\Logs) and reports information about all the connected devices and their Volume Serial Numbers, both currently present on the device and previously existed. It accomplices this task by doing the following:
 
 - parsing all the records in the log,
 
