@@ -117,7 +117,7 @@ def fullparse():
 			</div>'''
 
 			FullParsehtml_code += f'\n<table align="center"> \n <caption><h2><b>Full Report for all connected devices</b></h2></caption>'
-			FullParsehtml_code += '\n<tr style="background-color:DarkGrey"> \n <th>Media S/N</th> \n <th>Manufacturer</th> \n <th>Model</th> \n <th>First connected Timestamp (UTC)</th> \n <th>Last connected Timestamp (UTC)</th> \n <th>Every VSN ever existed on the media</th>'
+			FullParsehtml_code += '\n<tr style="background-color:DarkGrey"> \n <th>Media S/N</th> \n <th>Manufacturer</th> \n <th>Model</th> \n <th>First connected Timestamp (UTC)</th> \n <th>Last connected Timestamp (UTC)</th> \n <th>Every VSN recovered from the log</th>'
 			
 			for serial in AllPluggedInSerials:
 				FullParsehtml_code += f'\n<tr> \n <td>{serial}</td> \n<td>{EachPluggedDeviceDict[serial][0]}</td> \n <td>{EachPluggedDeviceDict[serial][1]}</td> \n<td>{EachPluggedDeviceDict[serial][2]}</td> \n<td>{EachPluggedDeviceDict[serial][3]} </td>\n <td>'				
@@ -358,7 +358,7 @@ while True:
 						print(f'End: {LogEndTime}')
 						print()
 						if isDiskPlugedin == False:
-							print(f'Device with serial number {serial} was never connected to the computer.')
+							print(f'No record of a device with serial number {serial} was found in the log.')
 							if values['-HTMLCHK-'] or values['-CSVCHK-']:
 								print('No report was created for the specific S/N')
 							if values['-FULLCHK-']:
