@@ -133,7 +133,7 @@ def fullparse():
 					FullParsehtml_code += f'{EachPluggedDeviceDict[serial][4][i]} '
 				FullParsehtml_code += '</td>'
 
-			FullParsehtml_code += f'\n</table> \n<br>\n<p align="left" style="color:white">\n <u style="font-size:20px"> Complete Log Timeline</u> <br>\n From: {FullParseLogStartTime} <br>\nTo: {FullParseLogEndTime} <br>\n</p> \n<br> <br> <br>\n<div class="push"></div> \n</div> \n <div class="footer">--Partition%4DiagnosticParser Ver. 1.3.0</div>\n</body>\n</html>'
+			FullParsehtml_code += f'\n</table> \n<br>\n<p align="left" style="color:white">\n <u style="font-size:20px"> Complete Log Timeline</u> <br>\n From: {FullParseLogStartTime} <br>\nTo: {FullParseLogEndTime} <br>\n</p> \n<br> <br> <br>\n<div class="push"></div> \n</div> \n <div class="footer">--Partition%4DiagnosticParser Ver. 1.4.0</div>\n</body>\n</html>'
 			FullParsecss_code = '''table{border-collapse:collapse;}
 			th{text-align:center;background-color:#4a4343;color=white;}
 			table,th,td{border:1px solid #000;}
@@ -249,7 +249,7 @@ col_layout = [[sg.Frame('Device Serial Number', DiskSNFrameLayout, background_co
 layout = [[sg.Menu(menu_def, key='-MENUBAR-')],
 			[sg.Column(col_layout, element_justification='c',background_color='#2a363b'), sg.Frame('Verbose Analysis',
 			[[sg.Output(size=(70,25), background_color='#334147', text_color='#fefbd8')]], background_color='#2a363b')],
-			[sg.Text('Partition%4DiagnosticParser Ver. 1.3.0', background_color='#2a363b', text_color='#b2c2bf')]]
+			[sg.Text('Partition%4DiagnosticParser Ver. 1.4.0', background_color='#2a363b', text_color='#b2c2bf')]]
 
 window = sg.Window('Partition%4DiagnosticParser', layout, background_color='#2a363b') 
 
@@ -266,7 +266,7 @@ while True:
 		except:
 			sg.PopupOK('Visit https://github.com/theAtropos4n6 for documentation', title='Documentation', background_color='#2a363b')
 	if event == 'About':
-		sg.PopupOK('EVTX Partition Diagnostic Parser Ver. 1.3.0 \n\n --DKats 2020', title='-About-', background_color='#2a363b')
+		sg.PopupOK('EVTX Partition Diagnostic Parser Ver. 1.4.0 \n\n --DKats 2020', title='-About-', background_color='#2a363b')
 #---checkbox events (to enable/disable the output save button)
 	if event == '-HTMLCHK-' or event == '-CSVCHK-' or event == '-FULLCHK-':
 		if values['-HTMLCHK-'] == False and values['-CSVCHK-'] == False and values['-FULLCHK-'] == False:
@@ -436,7 +436,7 @@ while True:
 							if values['-HTMLCHK-']: # an exei tickarei to checkbox gia html report
 								HTMLTicked = True
 								HTMLWritten = True
-								html_code += f'\n</table> \n<br>\n<p align="left" style="color:white">\n <u style="font-size:20px"> Complete Log Timeline</u> <br>\n From: {LogStartTime} <br>\nTo: {LogEndTime} <br>\n</p> \n<br> <br> <br> \n<div class="push"></div> \n</div> \n <div class="footer">--Partition%4DiagnosticParser Ver. 1.3.0</div>\n</body>\n</html>'
+								html_code += f'\n</table> \n<br>\n<p align="left" style="color:white">\n <u style="font-size:20px"> Complete Log Timeline</u> <br>\n From: {LogStartTime} <br>\nTo: {LogEndTime} <br>\n</p> \n<br> <br> <br> \n<div class="push"></div> \n</div> \n <div class="footer">--Partition%4DiagnosticParser Ver. 1.4.0</div>\n</body>\n</html>'
 								css_code = '''table{border-collapse:collapse;}
 								th{text-align:center;background-color:#4a4343;color=white;}
 								table,th,td{border:1px solid #000;}
